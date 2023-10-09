@@ -1,2 +1,23 @@
-# SI_UP_Practicum
-Problems for si up pracitcum FMI
+#Практикум СИ 23/24
+
+Тук ще се качват всички задачи от практикума на 1. група софт. инж. 
+Всеки студент има една седмица да реши дадените задачи, като ще бъде отбелязвано в таблица.
+След седмица ще бъдат пуснати решенията на задачите.
+
+##Table of content
+
+
+| № Лекция  | Тема |
+| ------------- | ------------- |
+| Лекция 1  | Content Cell  |
+| Лекция 2  | Content Cell  |
+| Лекция 3  | Content Cell  |
+| Лекция 4  | Content Cell  |
+| Лекция 5  | Content Cell  |
+| Лекция 6  | Content Cell  |
+| Лекция 7  | Content Cell  |
+| Лекция 8  | Content Cell  |
+| Лекция 9  | Content Cell  |
+| Лекция 10  | Content Cell  |
+
+
