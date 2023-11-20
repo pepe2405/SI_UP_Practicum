@@ -72,7 +72,7 @@ for (int i = 0; i < MAX_PASSWORD_LENGTH; i++) { /* do something */ }
 ```
 
 ## Пример:
-```cpp
+```c++
 // don't
 int a[50];
 // do
@@ -109,6 +109,7 @@ long calculateSum (int n)
 //       5. Оставяй празни редове ("въздух")
 //       6. Не оставяй никъде два или повече последователни празни редове
 //       7. Красиво обикновено е симетричното
+
 long calculateSum(int n)
 {
     long sumOfOddSquares = 0;
