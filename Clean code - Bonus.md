@@ -59,12 +59,12 @@
 
 ## Не използвай магически числа (числа, които не знаем от къде са дошли)
 
-```cpp=
+```cpp
 // Bad
 for (int i = 0; i < 16; i++) { /* what is 16?! */ }
 ```
 
-```cpp=
+```cpp
 // Good
 const int MAX_PASSWORD_LENGTH = 16;
 //  [...]
@@ -84,7 +84,7 @@ int t;
 int numberOfTasks;
 ```
 
-```cpp=
+```cpp
 // Bad
 long calculateSum (int n)
 {
@@ -101,7 +101,7 @@ long calculateSum (int n)
 
 ---
 
-```cpp=
+```cpp
 // Good: 1. Не "залепвай" if, for, do, while, switch с последващата (
 //       2. Не "залепвай" операторите към операндите
 //       3. Не оставяй интервал между името на метод и (
@@ -127,7 +127,7 @@ long calculateSum(int n)
 
 ---
 
-```cpp=
+```cpp
 // Bad
 if (x % 2 == 0)
 {
@@ -138,10 +138,7 @@ else
     return false;
 }
 ```
-
-<br>
-
-```cpp=
+```cpp
 // Good: Изразявай се кратко. Малко код == малко бъгове
 return x % 2 == 0;
 ```
