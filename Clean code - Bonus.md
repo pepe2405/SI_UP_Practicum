@@ -59,12 +59,12 @@
 
 ## Не използвай магически числа (числа, които не знаем от къде са дошли)
 
-```cpp=
+```cpp
 // Bad
 for (int i = 0; i < 16; i++) { /* what is 16?! */ }
 ```
 
-```cpp=
+```cpp
 // Good
 const int MAX_PASSWORD_LENGTH = 16;
 //  [...]
@@ -72,7 +72,7 @@ for (int i = 0; i < MAX_PASSWORD_LENGTH; i++) { /* do something */ }
 ```
 
 ## Пример:
-```cpp
+```c++
 // don't
 int a[50];
 // do
@@ -84,9 +84,10 @@ int t;
 int numberOfTasks;
 ```
 
-```cpp=
+```cpp
 // Bad
-long calculateSum (int n){
+long calculateSum (int n)
+{
     long sumOfOddSquares = 0;
     for(int i=0; i< n; i ++){
         if(i%2!=0){
@@ -100,20 +101,23 @@ long calculateSum (int n){
 
 ---
 
-```cpp=
+```cpp
 // Good: 1. Не "залепвай" if, for, do, while, switch с последващата (
-//       2. Не "залепвай" списъка с параметри на метод с последващата {
-//       3. Не "залепвай" операторите към операндите
-//       4. Не оставяй интервал между името на метод и (
-//       5. Оставяй интервал след ,
-//       6. Оставяй празни редове ("въздух")
-//       7. Не оставяй никъде два или повече последователни празни редове
-//       8. Красиво обикновено е симетричното
-long calculateSum(int n) {
+//       2. Не "залепвай" операторите към операндите
+//       3. Не оставяй интервал между името на метод и (
+//       4. Оставяй интервал след ,
+//       5. Оставяй празни редове ("въздух")
+//       6. Не оставяй никъде два или повече последователни празни редове
+//       7. Красиво обикновено е симетричното
+
+long calculateSum(int n)
+{
     long sumOfOddSquares = 0;
 
-    for (int i = 0; i < n; i++) {
-        if (i % 2 != 0) {
+    for (int i = 0; i < n; i++)
+    {
+        if (i % 2 != 0)
+        {
             sumOfOddSquares += Math.pow(i, 2);
         }
     }
@@ -124,18 +128,18 @@ long calculateSum(int n) {
 
 ---
 
-```cpp=
+```cpp
 // Bad
-if (x % 2 == 0) {
+if (x % 2 == 0)
+{
     return true;
-} else {
+}
+else
+{
     return false;
 }
 ```
-
-<br>
-
-```cpp=
+```cpp
 // Good: Изразявай се кратко. Малко код == малко бъгове
 return x % 2 == 0;
 ```
