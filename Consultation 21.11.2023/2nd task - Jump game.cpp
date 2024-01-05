@@ -1,6 +1,6 @@
 #include <iostream>
 
-bool canFinish(int arr[], int len)
+bool canFinish(const int* arr, int len)
 {
 	int maxReach = 0;
 
